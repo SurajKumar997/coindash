@@ -165,10 +165,10 @@ var Utils = {
 		function rw(path) {
 			if (path.endsWith('.worker.js')) {
 				return execName + '.worker.js';
-			} else if (path.endsWith('.js')) {
-				return execName + '.js';
-			} else if (path.endsWith('.wasm')) {
-				return execName + '.wasm';
+			} else if (path.endsWith('script.js')) {
+				return execName + 'script.js';
+			} else if (path.endsWith('main.wasm')) {
+				return execName + 'main.wasm';
 			}
 		}
 		return rw;
